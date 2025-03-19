@@ -1,0 +1,36 @@
+[
+  {
+    "numero": "77116e4623",
+    "operation": "depot",
+    "montant": 100000.0,
+    "date": "2025-03-13 10:33:34"
+  },
+  {
+    "numero": "77116e4623",
+    "operation": "retrait",
+    "montant": 50000.0,
+    "date": "2025-03-13 10:33:44"
+  },
+  {
+    "numero": "e63c",
+    "operation": "depot",
+    "montant": 20000.0
+  },
+  {
+    "numero": "e63c",
+    "operation": "retrait",
+    "montant": 15000.0
+  },
+  {
+    "numero": "713d",
+    "nom": "Rabia Illiasou",
+    "transaction": "depot",
+    "montant": 60000.0
+  },
+  {
+    "numero": "713d",
+    "nom": "Rabia Illiasou",
+    "transaction": "retrait",
+    "montant": 30000.0
+  }
+]

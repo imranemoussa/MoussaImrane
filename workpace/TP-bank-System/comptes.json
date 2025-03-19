@@ -1,0 +1,44 @@
+[
+  {
+    "numero": "03b4098f79",
+    "nom": "Alio Magagi",
+    "solde": 5000.0,
+    "actif": true
+  },
+  {
+    "numero": "7dba97914f",
+    "nom": "Souleymane Batman",
+    "solde": 0.0,
+    "actif": true
+  },
+  {
+    "numero": "6e9ab27fdb",
+    "nom": "Djaff",
+    "solde": 0.0,
+    "actif": false
+  },
+  {
+    "numero": "77116e4623",
+    "nom": "Anani Kom",
+    "solde": 50000.0,
+    "actif": true
+  },
+  {
+    "numero": "e63c",
+    "nom": "Rabia",
+    "solde": 5000.0,
+    "actif": true
+  },
+  {
+    "nom": "Imrane Moussa",
+    "numero": "e0bf",
+    "solde": 50000.0,
+    "actif": false
+  },
+  {
+    "nom": "Rabia Illiasou",
+    "numero": "713d",
+    "solde": 30000.0,
+    "actif": false
+  }
+]
