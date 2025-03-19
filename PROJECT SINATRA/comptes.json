@@ -1,0 +1,14 @@
+[
+  {
+    "numero": "fb38",
+    "nom": "Imrane Moussa",
+    "solde": 50000.0,
+    "actif": true
+  },
+  {
+    "numero": "fe53",
+    "nom": "Abdoulaye Harouna",
+    "solde": 0.0,
+    "actif": true
+  }
+]

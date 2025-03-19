@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des données</title>
+    <title>Liste des blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 flex items-center justify-center min-h-screen p-4">
 
     <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-4xl">
-        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Liste des données</h1>
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Liste des blogs</h1>
 
         <div class="flex justify-end mb-4">
             <a href="/ajoutBlog" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                Ajouter une nouvelle donnée
+                Ajouter un blkog
             </a>
         </div>
 
@@ -22,8 +22,7 @@
                 <thead>
                     <tr class="bg-gray-200 text-gray-700">
                         <th class="py-2 px-4 border">ID</th>
-                        <th class="py-2 px-4 border">Le titre</th>
-                        <th class="py-2 px-4 border">Le Contenu</th>
+                        <th class="py-2 px-4 border">Titre</th>
                         <th class="py-2 px-4 border">Actions</th>
                     </tr>
                 </thead>
@@ -32,18 +31,23 @@
                         <tr class="hover:bg-gray-100">
                             <td class="py-2 px-4 border text-center"><%= donnee["id"] %></td>
                             <td class="py-2 px-4 border"><%= donnee["titre"] %></td>
-                            <td class="py-2 px-4 border"><%= donnee["contenu"] %></td>
                             <td class="py-2 px-4 border text-center">
-                                <a href="/modifier/<%= donnee['id'] %>" 
-                                   class="bg-yellow-500 text-white px-3 py-1 rounded-lg hover:bg-yellow-600 transition">
-                                    Modifier
-                                </a>
-                                <form action="/supprimer/<%= donnee['id'] %>" method="post" class="inline-block">
-                                    <button type="submit" 
-                                            class="bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700 transition">
-                                        Supprimer
-                                    </button>
-                                </form>
+                                <div class="flex space-x-2 justify-center">
+                                    <a href="/blog/<%= donnee['id'] %>" 
+                                       class="bg-green-600 text-white px-3 py-1 rounded-lg hover:bg-green-700 transition">
+                                        Voir le blog
+                                    </a>
+                                    <a href="/modifier/<%= donnee['id'] %>" 
+                                       class="bg-yellow-500 text-white px-3 py-1 rounded-lg hover:bg-yellow-600 transition">
+                                        Modifier
+                                    </a>
+                                    <form action="/supprimer/<%= donnee['id'] %>" method="post" class="inline-block">
+                                        <button type="submit" 
+                                                class="bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700 transition">
+                                            Supprimer
+                                        </button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     <% end %>

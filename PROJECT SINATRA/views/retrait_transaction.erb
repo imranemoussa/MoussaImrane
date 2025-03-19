@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retrait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4">
+    <div class="max-w-md mx-auto mt-10 bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-4 text-center">Retirer de l'argent</h2>
+
+    <form action="/retrait" method="post" class="space-y-4">
+        <div>
+        <label for="numero" class="block text-gray-700 font-medium">Num du compte</label>
+        <input type="text" id="numero" name="numero" required
+                class="w-full px-4 py-2 border rounded-md focus:ring focus:ring-red-300">
+        </div>
+
+        <div>
+        <label for="montant" class="block text-gray-700 font-medium">Montant</label>
+        <input type="number" id="montant" name="montant" step="0.01" required
+                class="w-full px-4 py-2 border rounded-md focus:ring focus:ring-red-300">
+        </div>
+
+        <button type="submit" class="w-full bg-red-500 text-white py-2 rounded-md hover:bg-red-600">
+        Retirer
+        </button>
+    </form>
+    </div>
+</body>
+</html>

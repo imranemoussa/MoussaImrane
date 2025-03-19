@@ -1,0 +1,12 @@
+[
+  {
+    "numero": "fb38",
+    "operation": "dépôt",
+    "montant": 100000.0
+  },
+  {
+    "numero": "fb38",
+    "operation": "retrait",
+    "montant": 50000.0
+  }
+]

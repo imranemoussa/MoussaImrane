@@ -1,13 +1,15 @@
 [
   {
-    "id": 2,
-    "titre": "Hello",
-    "contenu": "Word js"
-  },
-  {
     "id": 3,
     "titre": "Ruby",
-    "contenu": "Ruby on rails"
+    "contenu": "Ruby on rails",
+    "commentaires": [
+      {
+        "id": 1,
+        "auteur": null,
+        "contenu": ""
+      }
+    ]
   },
   {
     "id": 4,

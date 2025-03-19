@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Comptes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Liste des Comptes</h1>
+        
+        <div class="overflow-x-auto">
+            <table class="w-full border border-gray-300 shadow-sm">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-700">
+                        <th class="py-2 px-4 border">Numéro</th>
+                        <th class="py-2 px-4 border">Nom</th>
+                        <th class="py-2 px-4 border">Solde</th>
+                        <th class="py-2 px-4 border">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% @comptes.each do |compte| %>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-2 px-4 border text-center"><%= compte["numero"] %></td>
+                            <td class="py-2 px-4 border"><%= compte["nom"] %></td>
+                            <td class="py-2 px-4 border text-center"><%= compte["solde"] %> FCFA</td>
+                            <td class="py-2 px-4 border text-center">
+                                <a href="/compte/<%= compte['numero'] %>" 
+                                   class="bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition">
+                                    Voir détails
+                                </a>
+                            </td>
+                        </tr>
+                    <% end %>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-6 text-center">
+            <a href="/" class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">
+                Retour 
+            </a>
+        </div>
+    </div>
+</body>
+</html>
